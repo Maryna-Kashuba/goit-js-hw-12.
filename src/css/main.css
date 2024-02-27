@@ -22,10 +22,12 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 24px 12px;
+	margin-bottom: 16px;
 }
 
 .card {
 	border: 1px solid #808080;
+	max-width: 360px;
 }
 
 .card-img {
@@ -38,6 +40,10 @@ body {
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
+}
+.load-btn{
+	display: block;
+	margin: 0 auto;
 }
 
 .loader {
@@ -67,7 +73,6 @@ body {
 	margin: -1px;
 	border: 0;
 	padding: 0;
-
 	white-space: nowrap;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);

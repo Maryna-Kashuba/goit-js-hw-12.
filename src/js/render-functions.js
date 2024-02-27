@@ -1,9 +1,3 @@
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
-
-const gallery = document.querySelector('.gallery');
-const lightbox = new SimpleLightbox('.gallery a', {   captionsData: 'alt', captionDelay: 250 
-});
 
 function templateCard({
   webformatURL,
@@ -27,11 +21,6 @@ function templateCard({
       </li>`;
 }
 
-function templateCards(images) {
+export function templateCards(images) {
   return images.map(templateCard).join('');
-}
-
-export function renderCards(images) {
-  gallery.innerHTML = templateCards(images);
-  lightbox.refresh();
 }
